@@ -19,9 +19,17 @@ abstract class Query extends Factory {
 	/**
 	 * @var WP_Query
 	 */
+	public $query = array();
+
+	/**
+	 * @var array WP_Query->posts array.
+	 */
 	public $results = array();
-	public $args;
-	protected $model = '';
+
+	/**
+	 * @var string Post Model class.
+	 */
+	protected $model = '\WPOOP\Model\Post';
 
 	public function __construct( $args = array() ) {
 		$args = wp_parse_args( $args, array(

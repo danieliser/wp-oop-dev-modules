@@ -19,7 +19,7 @@ class Post {
 	 */
 	public $ID = 0;
 	/**
-	 * Declare the default properities in WP_Post as we can't extend it
+	 * Declare the default properties in WP_Post as we can't extend it
 	 *
 	 * @since 1.0.0
 	 */
