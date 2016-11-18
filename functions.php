@@ -34,8 +34,6 @@ function wpoop_reset_postdata() {
  * @return int
  */
 function wpoop_get_post_id( $post_id = 0 ) {
-
-
 	global $wp_query;
 
 	if ( is_singular( 'post' ) && ! in_the_loop() && isset( $wp_query->queried_object->ID ) ) {
